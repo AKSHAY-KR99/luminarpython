@@ -1,10 +1,15 @@
-lst=[1,2,3,4,5,6]
+lst=[1,2,3,5]
+lst.sort()
 num=int(input("Enter the sum that u want : "))
-for i in range(0,len(lst)):
-    for j in range(i+1,len(lst)):
-        if lst[i]+lst[j]==num:
-            print(lst[i],",",lst[j]," ")
-        else:
-            pass
+low=0
+upp=len(lst)-1
+while(low<upp):
+    tot=lst[low]+lst[upp]
+    if(tot==num):
+        print(lst[low],lst[upp])
+        break
+    else:
+        low+=1
+
 
 
