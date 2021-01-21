@@ -23,5 +23,3 @@ print(diff1)
 
 
 #task1
-student=["name1",name1,name3,name2]
-fail=[name1,name2]

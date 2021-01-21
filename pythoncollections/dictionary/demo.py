@@ -3,6 +3,7 @@ expense={"jan20":20000,"feb20":30000,"march20":28000,"april20":25000,"may20":220
 #fetch value using keyword
 #duplicate not possible , immutable
 #KEY must be unique
+print(type(expense))
 print(expense["may20"])
 
 print("june20" in expense)
