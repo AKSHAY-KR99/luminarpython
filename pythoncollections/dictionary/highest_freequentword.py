@@ -10,4 +10,4 @@ for key,value in dict.items():
     print(key," ",value)
 print(dict.get("E"))
 result=sorted(dict,key=dict.get,reverse=True)
-print(result)
+print(result[0])

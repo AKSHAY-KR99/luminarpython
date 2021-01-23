@@ -11,6 +11,11 @@ f=open("demo","r")
 word=[]
 
 for line in f:
-    word.append(line.rstrip("\n")split(" "))
+    word.append(line.rstrip("\n").split(" "))
 print(word)
 myword=[]
+for i in word:
+    for j in i:
+        myword.append(j)
+print(myword)
+print(len(myword))
