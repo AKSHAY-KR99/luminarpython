@@ -18,9 +18,9 @@ def result(**kwargs):
     if state in dict:
         if "prop" in kwargs:
             prop=kwargs["prop"]
-            print(dict[state][prop])
+            print("details ",dict[state][prop])
         else:
             pass
     else:
         pass
-result(state="Kerala",prop="cured")
+result(state="Mizoram",prop="death")
