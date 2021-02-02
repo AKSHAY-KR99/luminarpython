@@ -4,7 +4,7 @@ for lines in f:
     data=lines.rstrip("\n").split(",")
     state=data[3].rstrip("***")
     if(state=="Telengana"):
-        state="Telangana"
+        state="Telangana"~
     confirmed_case=int(data[8])
     if(state not in dict):
         dict[state]=confirmed_case
