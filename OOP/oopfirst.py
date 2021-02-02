@@ -18,7 +18,7 @@ class person:
 
 #two methos are created  1.setperson()   2.printperson()
 
-#we have to create REFERENCE (here 'obj' is a reference
+#we have to create REFERENCE (here 'obj' is a reference)
 
 obj=person()
 obj.setperson(25,"Xavier")
