@@ -1,6 +1,8 @@
 #CONSTRUCTOR
-# duty:: initialising instance variable constructor name always a class name
-# in python constuctor is __init__()
+# duty:: initialising instance variable
+# constructor name always a class name in java and c++
+# in python constuctor must be is __init__()
+# constructor automaticaly invoke during object creation
 
 
 

@@ -10,5 +10,11 @@ class child(parent):  #child inherits parent class
 
 c=child()
 c.phone()
-print(c)
+print(c) #childile reference/object
+
+
+
 #different types of inheritance
+# 1.parent-->child
+# 2.super-->sub
+# 3.base-->derived
