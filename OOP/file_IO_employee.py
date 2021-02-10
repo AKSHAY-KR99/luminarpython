@@ -12,18 +12,24 @@ class Employee:
     def __str__(self):
         return self.name
 
-f=open("employees","r")
+f=open("details of emp","r")
 
 emplist=[]
 salary_list=[]
 for lines in f:
     eid,name,desig,exp,salary=lines.rstrip("\n").split(",")
-    emplist.append(Employee(eid,name,desig,exp,salary))
+    emplist.append(Employee(eid,name,desig,exp,int(salary)))
+
+for emp in emplist:
+    if emp.desig=="developer":
+        print(emp)
 
 # HIGHEST SALARY
 for emp in emplist:
     salary_list.append(emp.salary)
-print(max(salary_list))
+print(salary_list)
+print("Highest salary :",max(salary_list))
+
 
 
 # who gain lowest salry in developer designation
@@ -34,9 +40,18 @@ for emp in emplist:
 print(devsalary)
 minsalary=min(devsalary)
 print("min salary:",minsalary)
+
+
 for emp in emplist:
     if emp.salary==minsalary:
         print(emp.name)
+
+
+
+
+
+
+
 
 namelst=[]
 for emp in emplist:

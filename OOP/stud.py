@@ -19,7 +19,7 @@ total=0
 
 
 for stud in slst:
-    if stud.course=="mean":
+    if stud.course=="django":
         print(stud.name)
 
         # total mark of DJANGO students
