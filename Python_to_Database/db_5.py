@@ -6,11 +6,10 @@ db=mysql.connector.connect(
     passwd='Password@123',
     auth_plugin='mysql_native_password',
     database='pythondecember'
-
 )
-
 cursor=db.cursor()
-sql='create table movie (id int,name varchar(50),year varchar(50),rating int)'
-data=cursor.execute(sql)
-print("table Created Succesfully")
-db.close()
+sql="select * from movie"
+cursor.execute(sql)
+movies=cursor.fetchall()
+for m in movies:
+    print(m)

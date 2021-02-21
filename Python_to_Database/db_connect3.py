@@ -6,11 +6,13 @@ db=mysql.connector.connect(
     passwd='Password@123',
     auth_plugin='mysql_native_password',
     database='pythondecember'
-
 )
-
 cursor=db.cursor()
-sql='create table movie (id int,name varchar(50),year varchar(50),rating int)'
-data=cursor.execute(sql)
-print("table Created Succesfully")
+try:
+    sql="insert into movie values(103,'D2','2021',4)"
+    cursor.execute(sql)
+    db.commit()
+except Exception as e:
+    print(e.args)
+    db.rollback()
 db.close()
