@@ -1,0 +1,43 @@
+body{
+    background-color: #cccccc;
+    background-image: url("pexels-photo-1591447.jpeg");
+   
+}
+h1{
+    color:rgb(255, 255, 255);
+    text-align: center;
+}
+#nokia{
+    background-color:rgb(236, 154, 0);
+    width: 30%;
+    border-style: solid;
+    border-color:rgb(133, 88, 5);
+}
+#sam{
+    background-color: rgb(241, 177, 57);
+    width: 30%;
+}
+#c3{
+    color: rgb(12, 11, 104);
+    color: white;
+    text-align: center;
+}
+.first{
+    background-color:rgb(94, 235, 113);
+    width: 30%;
+    border-style: solid;
+    border-color:rgb(41, 107, 14);
+    border-width: 2px;
+}
+#mi{
+    text-align: center;
+    color: rgb(189, 70, 1);
+}
+#s{
+    text-align: center;
+    color: white;
+}
+#i{
+    text-align: center;
+    color: rgb(189, 70, 1);
+}
