@@ -1,0 +1,40 @@
+h1{
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.blue{
+    background-color: blue;
+    width: 200px;
+    height: 400px;
+    float: left;
+    margin-left: 145px;
+}   
+.skyblue{
+    background-color:cadetblue;
+    width: 200px;
+    height: 400px;
+    float: left;
+    margin-left: 10px;
+}
+.lblue{
+    background-color: rgb(176, 176, 196);
+    width: 200px;
+    height: 400px;
+    float: left;
+    margin-left: 10px;
+}
+.yellow{
+    background-color: yellow;
+    width: 200px;
+    height: 400px;
+    float: left;
+    margin-left: 10px;
+}
+.red{
+    background-color:red;
+    width: 200px;
+    height: 400px;
+    float: left;
+    margin-left: 10px;
+}

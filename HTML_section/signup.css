@@ -1,0 +1,24 @@
+#fir{
+    background-image: url("fbnack.jpg");
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+table{
+    margin-left: auto;
+    margin-right: auto;
+}
+.a{
+    text-align: center;
+}
+#sec{
+    text-align: center;
+    background-color: rgb(160, 188, 248);
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    
+}
+.last{
+    
+}

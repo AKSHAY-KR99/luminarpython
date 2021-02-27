@@ -1,0 +1,67 @@
+.bodymain{
+    background-color: #e8e6f9;
+}
+h1{
+    font-size: calc(1.375rem + 4.5vw);
+    color: #1877f2;
+    position: relative;
+    top: -120px;
+    left: 144px;
+}
+h4{
+    position: relative;
+    top: -118px;
+    left: 150px;
+}
+
+.main{
+    background-color: rgb(255, 255, 255);
+    width: 350px;
+    height: 355px;
+    position: relative;
+    left: 650px;
+    top: -349px;
+}
+.btn-primary{
+    width: 300px;
+    position: relative;
+    left: 25px;
+    top: 24px;
+}
+h6{
+    color: royalblue;
+    text-align: center;
+    position: relative;
+    top: 31px;
+}
+hr{
+    position: relative;
+    top: 43px;
+    
+}    
+.btn-success{
+    position: absolute;
+    top: 270px;
+    left: 64px;
+    width: 225px;
+    height: 57px;
+}
+.form-control{
+    width: 100px;
+    height: 55px;
+    margin-top: 10px;
+}
+.border{
+    background-color: rgb(255, 255, 255);
+    width: 372px;
+    height: 373px;
+    position: relative;
+    top: 128px;
+    left: 639px;
+}
+.h6{
+    color: black;
+    position: absolute;
+    top: 515px;
+    left: 652px;
+}
