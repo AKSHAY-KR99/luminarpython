@@ -9,6 +9,7 @@ class Calc{
         console.log("two args");
     }
 }
+// methode overloading ::: same class name but different number of arguments
 
 var cal=new Calc();
 cal.add(10,20)

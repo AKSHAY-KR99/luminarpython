@@ -1,0 +1,30 @@
+body{
+    padding: 5%;
+}
+.main{
+    background-color: orange;
+    border-radius: 2%;
+    padding: 4%;
+    width: 230px;
+    height: 308px;
+}
+.zero{
+    width: 238%;
+}
+.equal{
+    position: relative;
+    left: 130%;
+}
+.plus{
+    position: relative;
+    left: 130%;
+}
+td{
+    padding: 7px;
+    border-spacing: 25px;
+}
+.control{
+    background-color: palegreen;
+    width: 200px;
+    height: 45px;
+}

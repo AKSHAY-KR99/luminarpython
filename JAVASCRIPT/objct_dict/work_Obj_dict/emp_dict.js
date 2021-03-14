@@ -18,3 +18,6 @@ else{
     console.log("Salary greater than 30000");
 }
 console.log(emp);
+for(let key in emp){
+    console.log(key);
+}

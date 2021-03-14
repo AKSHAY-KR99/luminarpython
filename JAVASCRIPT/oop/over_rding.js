@@ -4,7 +4,7 @@ class Parent{
     }
 }
 class Child extends Parent{
-    phone(){
+    phone=()=>{
         console.log("child phone");
     }
 }
