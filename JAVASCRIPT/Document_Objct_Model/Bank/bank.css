@@ -1,0 +1,13 @@
+.login{
+    position: relative;
+    left: 40%;
+    top: 20%;
+}
+
+form{
+    background-color: rgb(223, 223, 223);
+    position: relative;
+    top: 40%;
+    padding: 20px;
+    border-radius: 5px;
+}
