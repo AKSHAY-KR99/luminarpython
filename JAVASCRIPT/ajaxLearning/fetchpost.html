@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Fetch post</h1>
+    <label for="">Enter the ID No. : </label>
+    <input type="text" id="id_in">
+    <button onclick="fetchPost()">fetch details</button>
+    <table>
+        <tr>
+            <td>title</td>
+            <td>post</td>
+        </tr>
+        <tbody class="result"></tbody>
+    </table>
+</body>
+<script>
+    function fetchPost() {
+        var request = new XMLHttpRequest
+        var postid = document.querySelector("#id_in").value
+        request.open("get", `https://jsonplaceholder.typicode.com/posts/${postid}`)
+        request.onreadystatechange = () => {
+            if (request.readyState == 4) {
+                if ((request.status > 199) & (request.status < 300)) {
+                    var data = JSON.parse(request.responseText)
+                    var htmlData=`<tr><td>${}</td><td></td></tr>`
+                }
+            }
+        }
+    }    
+
+</script>
+
+</html>

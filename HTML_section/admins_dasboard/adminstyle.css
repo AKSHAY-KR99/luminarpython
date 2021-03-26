@@ -2,5 +2,20 @@
     font-family: 'Pacifico', cursive;    
 }
 .leftbox{
-    background-color: olivedrab;
+    background-color: rgb(75, 143, 79);
+    width: 200px;
+}
+.topnav{
+    font-size: 13px;
+    color: black;
+}
+.searchimage{
+    width: 25px;
+    height: 25px;
+}
+.top{
+    font-size: 13px;
+}
+.bottom{
+    font-size: 13px;
 }

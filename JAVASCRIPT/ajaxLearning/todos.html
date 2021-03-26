@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                name
+            </td>
+            <td>
+                email
+            </td>
+        </tr>
+        <tbody class="user">
+
+        </tbody>
+    </table>
+</body>
+<script>
+    var request = new XMLHttpRequest()
+    request.open("get", "https://jsonplaceholder.typicode.com/users")
+    request.send()
+    request.onreadystatechange = () => {
+        if (request.readyState == 4) {
+            if ((request.status > 199) & (request.status < 300)) {
+                var data = JSON.parse(request.responseText)
+                var html_data=""
+                data.forEach(element =>{
+                    html_data+=`<tr><td>${element.name}</td><td>${element.email}</td>`
+
+                })
+                document.querySelector(".user").innerHTML=html_data
+            }  
+        }
+    }
+
+</script>
+
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                usernmae email
+            </td>
+        </tr>
+        <tbody class="tb">
+            
+        </tbody>
+    </table>
+</body>
+
+<script>
+// first we have to create xmlhttp request object
+var request=new XMLHttpRequest()
+
+// we have to use the function open()
+request.open("get","https://jsonplaceholder.typicode.com/users")
+// pass arguments : method(get,post,delete,etc), which URL
+
+
+// to work the code we have to use sent function
+request.send()
+
+// to get the data
+request.onreadystatechange=()=>{
+    if(request.readyState==4){
+        if((request.status>199)&(request.status<300)){
+            // console.log("Success");
+            var data=JSON.parse(request.responseText)
+            // console.log(data);
+            // print only names of employees
+            for(let obj of data){
+                console.log(obj.name);
+            }
+        }
+        else{
+            console.log("failed");
+        }
+    }
+}
+
+
+
+
+</script>
+
+</html>

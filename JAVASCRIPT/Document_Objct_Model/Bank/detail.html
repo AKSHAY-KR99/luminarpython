@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- js -->
+    <script src="bankscript.js"></script>
     <!-- css -->
     <link rel="stylesheet" href="detail.css">
     <!-- bootsrap link -->
@@ -21,14 +23,14 @@
                 <form action="">
 
                     <label for="" class="form-label">Enter your Account Number</label>
-                    <input type="text" class="form-control" id="exampleInputEmail1 accno" aria-describedby="emailHelp">
+                    <input type="text" class="form-control" id="acno" aria-describedby="emailHelp">
                     <label for="exampleInputPassword1" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1 password">
+                    <input type="password" class="form-control" id="pwd">
                     <label for="" class="form-label">Enter the ammount</label>
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" id="amount">
                     <div class="d-grid gap-2 twobtn">
-                        <button class="btn btn-primary btn-success" type="button">Deposit</button>
-                        <button class="btn btn-primary" type="button">withdraw</button>
+                        <button class="btn btn-primary btn-success" type="button" onclick="Bank.deposit()">Deposit</button>
+                        <button class="btn btn-primary" type="button" onclick="Bank.withdrawal()">withdraw</button>
                       </div>
                       
 
