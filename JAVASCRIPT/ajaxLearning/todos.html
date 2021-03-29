@@ -1,46 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-
 <body>
+    <button onclick="listData()">Click to list users</button>
     <table>
         <tr>
-            <td>
-                name
-            </td>
-            <td>
-                email
-            </td>
+            <td></td>
+            <td></td>
         </tr>
-        <tbody class="user">
+        <tbody class="tbdy">
 
         </tbody>
     </table>
+    
 </body>
 <script>
-    var request = new XMLHttpRequest()
-    request.open("get", "https://jsonplaceholder.typicode.com/users")
-    request.send()
-    request.onreadystatechange = () => {
-        if (request.readyState == 4) {
-            if ((request.status > 199) & (request.status < 300)) {
-                var data = JSON.parse(request.responseText)
-                var html_data=""
-                data.forEach(element =>{
-                    html_data+=`<tr><td>${element.name}</td><td>${element.email}</td>`
+    var request=new XMLHttpRequest()
+    request.open("get","https://jsonplaceholder.typicode.com/users")
+function listData(){
 
+    
+    request.send()
+    request.onreadystatechange=()=>{
+        if(request.readyState==4){
+            if((request.status>199)&(request.status<300)){
+                var data=JSON.parse(request.responseText)
+                // data.forEach(element =>{
+                //     console.log(element.name);
+                //     console.log(element.email);
+                // })
+                var html_data=""
+                data.forEach(element => {
+                  html_data+=`<tr><td>${element.name}</td><td>${element.email}</td></tr>`  
                 })
-                document.querySelector(".user").innerHTML=html_data
-            }  
+                document.querySelector(".tbdy").innerHTML=html_data
+            }
         }
     }
-
+}    
 </script>
-
 </html>

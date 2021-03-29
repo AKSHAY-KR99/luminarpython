@@ -23,17 +23,20 @@
 </body>
 <script>
     function fetchPost() {
-        var request = new XMLHttpRequest
-        var postid = document.querySelector("#id_in").value
-        request.open("get", `https://jsonplaceholder.typicode.com/posts/${postid}`)
-        request.onreadystatechange = () => {
-            if (request.readyState == 4) {
-                if ((request.status > 199) & (request.status < 300)) {
-                    var data = JSON.parse(request.responseText)
-                    var htmlData=`<tr><td>${}</td><td></td></tr>`
+        var request=new XMLHttpRequest()
+        var postId=document.querySelector("#id_in").value
+        request.open("get",`https://jsonplaceholder.typicode.com/posts/${postId}`)
+        request.send()
+        request.onreadystatechange=()=>{
+            if(request.readyState==4){
+                if((request.status>199)&(request.status<300)){
+                    var data=JSON.parse(request.responseText)
+                    var html_data=`<tr><td>${data.title}</td><td>${data.body}</td></tr>`
                 }
+                document.querySelector(".result").innerHTML=html_data
             }
         }
+
     }    
 
 </script>
